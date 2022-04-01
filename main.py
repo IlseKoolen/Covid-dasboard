@@ -1,5 +1,6 @@
 # Import the object Flask from the flask module
 from flask import Flask
+from covid import download_summary
 
 # Create a webserver object called 'COVID Dashboard' and keep track of it in the variable called server
 server=Flask('COVID dashboard')
@@ -16,7 +17,7 @@ def index():
 # Define the function 'serve_summary()' and connect it to the route /summary
 def serve_summary():
 # Return the string "A bar chart summary of COVID cases per country."
-  return 'A bar chart summary of COVID cases per country.'
+  return download_summary()
 
 # Define an HTTP route /new to serve the new count worldwide chart
 @server.route('/new')
