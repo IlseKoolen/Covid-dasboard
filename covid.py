@@ -1,9 +1,5 @@
 from requests import get
-
-#import and setup logging
 import logging
-log_format = "[%(levelname)s] - %(asctime)s : %(message)s in %(module)s:%(lineno)d"
-logging.basicConfig(filename='covid.log', format=log_format, level=logging.INFO)
 
 #create a constant 'URL_API' with the URL of the API
 URL_API='https://api.covid19api.com'

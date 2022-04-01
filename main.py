@@ -2,6 +2,13 @@
 from flask import Flask
 from covid import download_summary, download_conformed_per_country
 
+#import and setup logging
+import logging
+log_format = "[%(levelname)s] - %(asctime)s : %(message)s in %(module)s:%(lineno)d"
+logging.basicConfig(filename='covid.log', format=log_format, level=logging.INFO)
+
+import json
+
 # Create a webserver object called 'COVID Dashboard' and keep track of it in the variable called server
 server=Flask('COVID dashboard')
 
@@ -16,8 +23,15 @@ def index():
 @server.route('/summary')
 # Define the function 'serve_summary()' and connect it to the route /summary
 def serve_summary():
-# Return the string "A bar chart summary of COVID cases per country."
-  return download_summary()
+  #load JSON template from sumary.json
+  json_template=json.load(open('templates/summary.json'))
+  #download summary from COVID API
+  json_data=download_summary()
+  #Add the data to the template
+  json_template['data']['values']=json_data['Countries']
+  #Send the chart description to the client
+  return json_template
+
 
 # Define an HTTP route /new to serve the new count worldwide chart
 @server.route('/new')

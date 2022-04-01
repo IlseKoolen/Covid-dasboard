@@ -1,14 +1,25 @@
-[WARNING] - 2022-04-01 10:34:11,958 :  * Running on all addresses.
+[WARNING] - 2022-04-01 12:08:31,260 :  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
-[INFO] - 2022-04-01 10:34:11,959 :  * Running on http://172.18.0.24:5000/ (Press CTRL+C to quit) in _internal:225
-[INFO] - 2022-04-01 10:34:12,236 : 172.18.0.1 - - [01/Apr/2022 10:34:12] "GET / HTTP/1.1" 200 - in _internal:225
-[INFO] - 2022-04-01 10:34:31,485 : 172.18.0.1 - - [01/Apr/2022 10:34:31] "GET /netherlands HTTP/1.1" 200 - in _internal:225
-[INFO] - 2022-04-01 10:34:35,267 : 172.18.0.1 - - [01/Apr/2022 10:34:35] "GET / HTTP/1.1" 200 - in _internal:225
-[INFO] - 2022-04-01 10:34:41,711 : 172.18.0.1 - - [01/Apr/2022 10:34:41] "GET /summary HTTP/1.1" 200 - in _internal:225
-[WARNING] - 2022-04-01 10:36:48,822 :  * Running on all addresses.
+[INFO] - 2022-04-01 12:08:31,261 :  * Running on http://172.18.0.12:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-01 12:08:48,391 : 172.18.0.1 - - [01/Apr/2022 12:08:48] "GET / HTTP/1.1" 200 - in _internal:225
+[ERROR] - 2022-04-01 12:08:55,847 : Exception on /summary [GET] in app:1457
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "main.py", line 27, in serve_summary
+    json_template=json.load(open('templates/summary.json'))
+FileNotFoundError: [Errno 2] No such file or directory: 'templates/summary.json'
+[INFO] - 2022-04-01 12:08:55,848 : 172.18.0.1 - - [01/Apr/2022 12:08:55] "[35m[1mGET /summary HTTP/1.1[0m" 500 - in _internal:225
+[INFO] - 2022-04-01 12:09:41,126 : 172.18.0.1 - - [01/Apr/2022 12:09:41] "GET / HTTP/1.1" 200 - in _internal:225
+[WARNING] - 2022-04-01 12:10:39,503 :  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
-[INFO] - 2022-04-01 10:36:48,822 :  * Running on http://172.18.0.24:5000/ (Press CTRL+C to quit) in _internal:225
-[INFO] - 2022-04-01 10:36:49,085 : 172.18.0.1 - - [01/Apr/2022 10:36:49] "GET / HTTP/1.1" 200 - in _internal:225
-[INFO] - 2022-04-01 10:36:54,030 : 172.18.0.1 - - [01/Apr/2022 10:36:54] "GET / HTTP/1.1" 200 - in _internal:225
-[INFO] - 2022-04-01 10:36:58,888 : Successfully received Dutch data from COVID19 API in covid:44
-[INFO] - 2022-04-01 10:36:58,988 : 172.18.0.1 - - [01/Apr/2022 10:36:58] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-01 12:10:39,504 :  * Running on http://172.18.0.12:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-01 12:10:43,520 : 172.18.0.1 - - [01/Apr/2022 12:10:43] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-01 12:10:49,159 : 172.18.0.1 - - [01/Apr/2022 12:10:49] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-01 12:11:54,773 : 172.18.0.1 - - [01/Apr/2022 12:11:54] "GET / HTTP/1.1" 200 - in _internal:225
