@@ -1,6 +1,12 @@
 from requests import get
 
+#import and setup logging
 import logging
+log_format = "[%(levelname)s] - %(asctime)s : %(message)s in %(module)s:%(lineno)d"
+logging.basicConfig(filename='covid.log', format=log_format, level=logging.INFO)
+
+#create a constant 'URL_API' with the URL of the API
+URL_API='https://api.covid19api.com'
 
 def download_summary():
   '''''
@@ -10,7 +16,7 @@ def download_summary():
   '''''
 
   #Send the HTTP request
-  response=get(f'https://api.covid19api.com/summary')
+  response=get(f'{URL_API}/summary')
   #Check for the HTTP response status 200 (OK)
   if response.status_code==200:
     #return the response as JSON
@@ -31,10 +37,11 @@ def download_conformed_per_country(country):
   country -- the name of the requested
   '''''
   #send HTTP request
-  response=get(f'http://api.covid19api.com/country/{country}/status/confirmed')
+  response=get(f'{URL_API}/country/{country}/status/confirmed')
   #check for the HTTP response status 200 (OK)
   if response.status_code==200:
     #  Return the response as JSON
+    logging.info('Successfully received Dutch data from COVID19 API')
     return {'data':response.json()}
   #Otherwise, something went wrong
   else:
