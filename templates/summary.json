@@ -5,7 +5,8 @@
     "values": []
   },
   "mark": {
-    "type": "bar"
+    "type": "bar",
+    "tooltip":true
   },
   "encoding": {
     "x": {
@@ -14,7 +15,8 @@
     },
     "y": {
       "field": "Country",
-      "type": "nominal"
+      "type": "nominal",
+      "sort": "-x"
     }
   }
 }

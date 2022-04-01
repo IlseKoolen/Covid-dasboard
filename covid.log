@@ -40,3 +40,105 @@ FileNotFoundError: [Errno 2] No such file or directory: 'templates/summary.json'
 [INFO] - 2022-04-01 12:23:22,108 : 172.18.0.1 - - [01/Apr/2022 12:23:22] "GET /summary HTTP/1.1" 200 - in _internal:225
 [INFO] - 2022-04-01 12:23:28,062 : 172.18.0.1 - - [01/Apr/2022 12:23:28] "[36mGET / HTTP/1.1[0m" 304 - in _internal:225
 [INFO] - 2022-04-01 12:23:28,850 : 172.18.0.1 - - [01/Apr/2022 12:23:28] "GET /summary HTTP/1.1" 200 - in _internal:225
+[WARNING] - 2022-04-01 12:26:43,305 :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
+[INFO] - 2022-04-01 12:26:43,306 :  * Running on http://172.18.0.12:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-01 12:26:48,065 : 172.18.0.1 - - [01/Apr/2022 12:26:48] "GET / HTTP/1.1" 200 - in _internal:225
+[ERROR] - 2022-04-01 12:26:48,743 : Exception on /summary [GET] in app:1457
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "main.py", line 27, in serve_summary
+    json_template=json.load(open('templates/summary.json'))
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 9 column 5 (char 166)
+[INFO] - 2022-04-01 12:26:48,745 : 172.18.0.1 - - [01/Apr/2022 12:26:48] "[35m[1mGET /summary HTTP/1.1[0m" 500 - in _internal:225
+[INFO] - 2022-04-01 12:27:13,803 : 172.18.0.1 - - [01/Apr/2022 12:27:13] "GET / HTTP/1.1" 200 - in _internal:225
+[ERROR] - 2022-04-01 12:27:14,045 : Exception on /summary [GET] in app:1457
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "main.py", line 27, in serve_summary
+    json_template=json.load(open('templates/summary.json'))
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 9 column 5 (char 166)
+[INFO] - 2022-04-01 12:27:14,046 : 172.18.0.1 - - [01/Apr/2022 12:27:14] "[35m[1mGET /summary HTTP/1.1[0m" 500 - in _internal:225
+[INFO] - 2022-04-01 12:27:23,198 : 172.18.0.1 - - [01/Apr/2022 12:27:23] "[36mGET / HTTP/1.1[0m" 304 - in _internal:225
+[ERROR] - 2022-04-01 12:27:23,447 : Exception on /summary [GET] in app:1457
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "main.py", line 27, in serve_summary
+    json_template=json.load(open('templates/summary.json'))
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 9 column 5 (char 166)
+[INFO] - 2022-04-01 12:27:23,448 : 172.18.0.1 - - [01/Apr/2022 12:27:23] "[35m[1mGET /summary HTTP/1.1[0m" 500 - in _internal:225
+[INFO] - 2022-04-01 12:27:30,599 : 172.18.0.1 - - [01/Apr/2022 12:27:30] "[36mGET / HTTP/1.1[0m" 304 - in _internal:225
+[ERROR] - 2022-04-01 12:27:30,828 : Exception on /summary [GET] in app:1457
+Traceback (most recent call last):
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/virtualenvs/python3/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "main.py", line 27, in serve_summary
+    json_template=json.load(open('templates/summary.json'))
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 9 column 5 (char 166)
+[INFO] - 2022-04-01 12:27:30,829 : 172.18.0.1 - - [01/Apr/2022 12:27:30] "[35m[1mGET /summary HTTP/1.1[0m" 500 - in _internal:225
+[WARNING] - 2022-04-01 12:28:44,229 :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
+[INFO] - 2022-04-01 12:28:44,229 :  * Running on http://172.18.0.12:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-01 12:28:44,597 : 172.18.0.1 - - [01/Apr/2022 12:28:44] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-01 12:28:45,773 : 172.18.0.1 - - [01/Apr/2022 12:28:45] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-01 12:28:55,058 : 172.18.0.1 - - [01/Apr/2022 12:28:55] "[36mGET / HTTP/1.1[0m" 304 - in _internal:225
+[INFO] - 2022-04-01 12:29:02,442 : 172.18.0.1 - - [01/Apr/2022 12:29:02] "GET /summary HTTP/1.1" 200 - in _internal:225
