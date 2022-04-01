@@ -1,6 +1,6 @@
 # Import the object Flask from the flask module
 from flask import Flask
-from covid import download_summary
+from covid import download_summary, download_conformed_per_country
 
 # Create a webserver object called 'COVID Dashboard' and keep track of it in the variable called server
 server=Flask('COVID dashboard')
@@ -31,7 +31,7 @@ def serve_summary_new():
 # Define the function 'serve_netherlands_history()' and connect it to the route /netherlands
 def serve_netherlands_history():
 # Return the string "An area chart of COVID cases over time in the Netherlands."
-  return 'An area chart of COVID cases over time in the Netherlands.'
+  return download_conformed_per_country('netherlands')
 
 # Start the webserver
 server.run('0.0.0.0')
