@@ -16,8 +16,8 @@ server=Flask('COVID dashboard')
 @server.route('/')
 # Define the function 'index()' and connect it to the route /
 def index():
-# Return the string "A nice COVID dashboard."
-  return 'A nice COVID dashboard'
+# Return the static file 'index.html'
+  return server.send_static_file('index.html')
 
 # Define an HTTP route /summary to serve the summary chart
 @server.route('/summary')

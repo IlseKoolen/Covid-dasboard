@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COVID Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  </head>
+  <body>
+    <!-- Where to draw the summary for all countries (Bar chart) -->
+    <div id="summary"></div>
+
+    <script type="text/javascript">
+      vegaEmbed('#summary', '/summary');
+    </script>
+  </body>
+</html>
