@@ -37,15 +37,39 @@ def serve_summary():
 @server.route('/new')
 # Define the function 'serve_summary_new()' and connect it to the route /new
 def serve_summary_new():
-# Return the string "A pie chart summary of new COVID cases globally."
-  return 'A pie chart summary of new COVID cases globally.'
+# Load json template from new.json
+  json_template = json.load(open('templates/new.json'))
+  # Download summary from the COVID API
+  json_data = download_summary()
+  # Create an empty list of value to receive filtered and formated data
+  values = []
+  # For all data in the "Global" structure
+  for key in json_data['Global']:
+    # Keep the 'New' entries (skip overall totals)
+    if key.startswith('New'):
+      # Create a dictionary with 'category' and 'value'
+      value = {'category': key, 'value': json_data['Global'][key]}
+      # Add the dictionary to the list of values
+      values.append(value)
+  # Add the data to the template
+  json_template['data']['values'] = values
+  # Send the chart description to the client
+  return json_template
 
 # Define an HTTP route /netherlands to serve the chart of the Netherlands
 @server.route('/netherlands')
 # Define the function 'serve_netherlands_history()' and connect it to the route /netherlands
 def serve_netherlands_history():
-# Return the string "An area chart of COVID cases over time in the Netherlands."
-  return download_conformed_per_country('netherlands')
+
+  json_template=json.load(open('templates/history.json'))
+  #download summary from COVID API
+  json_data=download_conformed_per_country('Netherlands')
+  #Add the data to the template
+  json_template['data']['values']=json_data['data']
+  #Send the chart description to the client
+  return json_template
+
+
 
 # Start the webserver
 server.run('0.0.0.0')

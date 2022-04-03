@@ -229,3 +229,58 @@ json.decoder.JSONDecodeError: Expecting ',' delimiter: line 9 column 5 (char 166
 [INFO] - 2022-04-03 16:30:58,272 :  * Running on http://172.18.0.42:5000/ (Press CTRL+C to quit) in _internal:225
 [INFO] - 2022-04-03 16:30:58,404 : 172.18.0.1 - - [03/Apr/2022 16:30:58] "GET / HTTP/1.1" 200 - in _internal:225
 [INFO] - 2022-04-03 16:30:59,049 : 172.18.0.1 - - [03/Apr/2022 16:30:59] "GET /summary HTTP/1.1" 200 - in _internal:225
+[WARNING] - 2022-04-03 16:52:59,449 :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
+[INFO] - 2022-04-03 16:52:59,449 :  * Running on http://172.18.0.42:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-03 16:52:59,618 : 172.18.0.1 - - [03/Apr/2022 16:52:59] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:53:00,198 : 172.18.0.1 - - [03/Apr/2022 16:53:00] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:53:05,890 : 172.18.0.1 - - [03/Apr/2022 16:53:05] "[36mGET / HTTP/1.1[0m" 304 - in _internal:225
+[INFO] - 2022-04-03 16:53:06,580 : 172.18.0.1 - - [03/Apr/2022 16:53:06] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:53:49,996 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 16:53:50,125 : 172.18.0.1 - - [03/Apr/2022 16:53:50] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[WARNING] - 2022-04-03 17:04:35,438 :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
+[INFO] - 2022-04-03 17:04:35,438 :  * Running on http://172.18.0.42:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-03 17:04:35,592 : 172.18.0.1 - - [03/Apr/2022 17:04:35] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:04:36,102 : 172.18.0.1 - - [03/Apr/2022 17:04:36] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:04:36,309 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 17:04:36,371 : 172.18.0.1 - - [03/Apr/2022 17:04:36] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:04:44,498 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 17:04:44,589 : 172.18.0.1 - - [03/Apr/2022 17:04:44] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:04:49,229 : 172.18.0.1 - - [03/Apr/2022 17:04:49] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:04:49,892 : 172.18.0.1 - - [03/Apr/2022 17:04:49] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:04:49,909 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 17:04:49,994 : 172.18.0.1 - - [03/Apr/2022 17:04:49] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:06:54,942 : 172.18.0.1 - - [03/Apr/2022 17:06:54] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:06:55,562 : 172.18.0.1 - - [03/Apr/2022 17:06:55] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:06:55,569 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 17:06:55,639 : 172.18.0.1 - - [03/Apr/2022 17:06:55] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:07:08,823 : 172.18.0.1 - - [03/Apr/2022 17:07:08] "[36mGET / HTTP/1.1[0m" 304 - in _internal:225
+[INFO] - 2022-04-03 17:07:09,410 : 172.18.0.1 - - [03/Apr/2022 17:07:09] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:07:09,499 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 17:07:09,578 : 172.18.0.1 - - [03/Apr/2022 17:07:09] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:07:58,017 : 172.18.0.1 - - [03/Apr/2022 17:07:58] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:07:58,613 : 172.18.0.1 - - [03/Apr/2022 17:07:58] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:07:58,686 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 17:07:58,770 : 172.18.0.1 - - [03/Apr/2022 17:07:58] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:11:24,719 : 172.18.0.1 - - [03/Apr/2022 17:11:24] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:11:25,418 : 172.18.0.1 - - [03/Apr/2022 17:11:25] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:11:25,454 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 17:11:25,574 : 172.18.0.1 - - [03/Apr/2022 17:11:25] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:11:25,793 : 172.18.0.1 - - [03/Apr/2022 17:11:25] "[36mGET / HTTP/1.1[0m" 304 - in _internal:225
+[INFO] - 2022-04-03 17:11:26,352 : 172.18.0.1 - - [03/Apr/2022 17:11:26] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 17:11:26,515 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 17:11:26,735 : 172.18.0.1 - - [03/Apr/2022 17:11:26] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[WARNING] - 2022-04-03 22:37:22,597 :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
+[INFO] - 2022-04-03 22:37:22,600 :  * Running on http://172.18.0.200:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-03 22:37:23,265 : 172.18.0.1 - - [03/Apr/2022 22:37:23] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 22:37:24,290 : 172.18.0.1 - - [03/Apr/2022 22:37:24] "GET /new HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 22:37:24,373 : 172.18.0.1 - - [03/Apr/2022 22:37:24] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 22:37:24,416 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 22:37:24,816 : 172.18.0.1 - - [03/Apr/2022 22:37:24] "GET /netherlands HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 22:37:27,978 : 172.18.0.1 - - [03/Apr/2022 22:37:27] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 22:37:28,761 : 172.18.0.1 - - [03/Apr/2022 22:37:28] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 22:37:28,780 : Successfully received Dutch data from COVID19 API in covid:40
+[INFO] - 2022-04-03 22:37:28,959 : 172.18.0.1 - - [03/Apr/2022 22:37:28] "GET /new HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 22:37:29,399 : 172.18.0.1 - - [03/Apr/2022 22:37:29] "GET /netherlands HTTP/1.1" 200 - in _internal:225
