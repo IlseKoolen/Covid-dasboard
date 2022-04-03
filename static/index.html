@@ -8,10 +8,31 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   </head>
   <body>
-    <!-- Where to draw the summary for all countries (Bar chart) -->
-    <div id="summary"></div>
 
-    <script type="text/javascript">
+<header>COVID-19 Dashboard</header>
+<main>
+  <h1>Around the world</h1> 
+
+
+
+ 
+  <section>
+    <!--Where to draw the newest count (Donut) -->
+    <div id='new'></div>
+    <!--Where to draw the summary for all countries(Bar chart) -->
+    <div id='summary'></div>
+  </section>
+  
+  <h1>In the Netherlands</h1>
+
+  <section>
+    <!--Where to draw the netherlands chart (Area chart)-->
+    <div id='netherlands'></div>
+  </section>
+  
+</main>
+
+        <script type="text/javascript">
       vegaEmbed('#summary', '/summary');
     </script>
   </body>
