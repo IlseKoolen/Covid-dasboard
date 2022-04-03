@@ -196,3 +196,36 @@ json.decoder.JSONDecodeError: Expecting ',' delimiter: line 9 column 5 (char 166
 [INFO] - 2022-04-03 15:47:49,240 : 172.18.0.1 - - [03/Apr/2022 15:47:49] "GET /summary HTTP/1.1" 200 - in _internal:225
 [INFO] - 2022-04-03 15:47:50,578 : 172.18.0.1 - - [03/Apr/2022 15:47:50] "GET / HTTP/1.1" 200 - in _internal:225
 [INFO] - 2022-04-03 15:47:51,201 : 172.18.0.1 - - [03/Apr/2022 15:47:51] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 15:48:49,177 : 172.18.0.1 - - [03/Apr/2022 15:48:49] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:11:08,334 : 172.18.0.1 - - [03/Apr/2022 16:11:08] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:11:08,973 : 172.18.0.1 - - [03/Apr/2022 16:11:08] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:11:24,762 : 172.18.0.1 - - [03/Apr/2022 16:11:24] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:11:25,381 : 172.18.0.1 - - [03/Apr/2022 16:11:25] "GET /summary HTTP/1.1" 200 - in _internal:225
+[WARNING] - 2022-04-03 16:11:29,569 :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
+[INFO] - 2022-04-03 16:11:29,569 :  * Running on http://172.18.0.42:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-03 16:11:29,765 : 172.18.0.1 - - [03/Apr/2022 16:11:29] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:11:30,382 : 172.18.0.1 - - [03/Apr/2022 16:11:30] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:18:21,979 : 172.18.0.1 - - [03/Apr/2022 16:18:21] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:18:22,533 : 172.18.0.1 - - [03/Apr/2022 16:18:22] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:18:35,516 : 172.18.0.1 - - [03/Apr/2022 16:18:35] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:18:36,250 : 172.18.0.1 - - [03/Apr/2022 16:18:36] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:18:45,478 : 172.18.0.1 - - [03/Apr/2022 16:18:45] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:18:46,113 : 172.18.0.1 - - [03/Apr/2022 16:18:46] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:19:06,416 : 172.18.0.1 - - [03/Apr/2022 16:19:06] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:19:07,003 : 172.18.0.1 - - [03/Apr/2022 16:19:07] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:19:20,184 : 172.18.0.1 - - [03/Apr/2022 16:19:20] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:19:20,794 : 172.18.0.1 - - [03/Apr/2022 16:19:20] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:28:04,894 : 172.18.0.1 - - [03/Apr/2022 16:28:04] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:28:05,506 : 172.18.0.1 - - [03/Apr/2022 16:28:05] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:29:21,061 : 172.18.0.1 - - [03/Apr/2022 16:29:21] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:29:21,693 : 172.18.0.1 - - [03/Apr/2022 16:29:21] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:29:49,744 : 172.18.0.1 - - [03/Apr/2022 16:29:49] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:29:50,334 : 172.18.0.1 - - [03/Apr/2022 16:29:50] "GET /summary HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:30:39,814 : 172.18.0.1 - - [03/Apr/2022 16:30:39] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:30:40,386 : 172.18.0.1 - - [03/Apr/2022 16:30:40] "GET /summary HTTP/1.1" 200 - in _internal:225
+[WARNING] - 2022-04-03 16:30:58,272 :  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. in _internal:225
+[INFO] - 2022-04-03 16:30:58,272 :  * Running on http://172.18.0.42:5000/ (Press CTRL+C to quit) in _internal:225
+[INFO] - 2022-04-03 16:30:58,404 : 172.18.0.1 - - [03/Apr/2022 16:30:58] "GET / HTTP/1.1" 200 - in _internal:225
+[INFO] - 2022-04-03 16:30:59,049 : 172.18.0.1 - - [03/Apr/2022 16:30:59] "GET /summary HTTP/1.1" 200 - in _internal:225
